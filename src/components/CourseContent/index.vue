@@ -13,7 +13,7 @@ const currentCatalogueState = useVModel(props, 'currentCatalogue', emits)
  */
 const totalTime = computed(() =>
   Array.from(props.courseCatalogues)
-    .map((c) => parseInt((c as CourseCatalogue).totalTime))
+    .map((c) => parseInt((c as Episode).totalTime))
     .reduce((c1, c2) => c1 + c2)
 )
 
