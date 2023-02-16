@@ -5,6 +5,5 @@ declare module 'vue' {
     $clsx: typeof import('clsx').default
     $moment: typeof import('moment')
     $message: typeof import('../components/Message/type')['Message']
-    $modal: typeof import('../components/Modal/type')['Modal']
   }
 }

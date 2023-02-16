@@ -57,16 +57,10 @@ onMounted(() => {
       >
     </aside-menus>
     <!-- logout menu -->
-    <aside-menu-item
-      :icon="faSignOut"
-      @click="
-        $modal.confirm({
-          text: '确定要退出吗'
-        })
-      "
+    <aside-menu-item :icon="faSignOut" @click="confirmModalVisible = true"
       >退出登录</aside-menu-item
     >
-    <!-- <modal title="确认框" v-model:visible="confirmModalVisible">
+    <modal title="确认框" v-model:visible="confirmModalVisible">
       <div class="text-sm">确定要退出登录吗?</div>
       <div class="flex justify-end space-x-2">
         <v-button type="primary" @click="onLogOut">确定</v-button>
@@ -74,6 +68,6 @@ onMounted(() => {
           >取消</v-button
         >
       </div>
-    </modal> -->
+    </modal>
   </aside>
 </template>
